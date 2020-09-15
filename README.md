@@ -1,8 +1,18 @@
 ember-register-helper
 ==============================================================================
 
-[Short description of the addon.]
+[![Build Status](https://travis-ci.org/mmun/ember-register-helper.svg?branch=main)](https://travis-ci.org/mmun/ember-register-helper)
 
+This helper takes a component class as an argument, registers it with
+the application using a generated name and returns this name. It is
+intended to be used in conjunction with the `{{component}}` helper as in
+
+    {{component (register myComponentClass)}}
+
+This helper also takes care to memoize the result to avoid unnecessary
+rerenders and to support environments that have multiple owners. This is
+particularly relevant in testing because each test gets its own isolated
+owner instance.
 
 Compatibility
 ------------------------------------------------------------------------------
@@ -18,12 +28,6 @@ Installation
 ```
 ember install ember-register-helper
 ```
-
-
-Usage
-------------------------------------------------------------------------------
-
-[Longer description of how to use the addon in apps.]
 
 
 Contributing

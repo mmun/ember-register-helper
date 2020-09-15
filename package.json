@@ -1,7 +1,7 @@
 {
   "name": "ember-register-helper",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0",
+  "description": "An ember helper that helps you render anonymous component classes",
   "keywords": [
     "ember-addon"
   ],
